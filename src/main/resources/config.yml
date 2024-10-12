@@ -1,0 +1,3 @@
+## World is the world name which contains the region you would like to despawn mobs in.
+World: "world"
+Region: "spawn"

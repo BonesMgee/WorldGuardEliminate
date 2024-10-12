@@ -1,0 +1,5 @@
+name: WorldGuardEliminate
+version: '${project.version}'
+main: com.jacobson.worldguardeliminate.WorldGuardEliminate
+api-version: '1.21'
+depend: [WorldGuard]

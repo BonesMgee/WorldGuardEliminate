@@ -1,5 +1,5 @@
-# MobRemover
-**MobRemover** is a Spigot plugin that automatically despawns monsters when they enter a predefined WorldGuard region in a specific world. This is particularly useful for keeping certain areas (such as spawn regions) free from hostile mobs.
+# Worldgaurd Eliminate 
+**Worldgaurd Eliminate** is a Spigot plugin that automatically despawns monsters when they enter a predefined WorldGuard region in a specific world. This is particularly useful for keeping certain areas (such as spawn regions) free from hostile mobs.
 
 ## Features
 - Automatically removes monsters from a designated WorldGuard region.
@@ -15,7 +15,7 @@
 3. Restart your server to generate the default configuration files.
 
 ## Configuration
-After the plugin is installed, you can configure the plugin by editing the `config.yml` file located in the `plugins/MobRemover` folder.
+After the plugin is installed, you can configure the plugin by editing the `config.yml` file located in the `plugins/WorldGuardEliminate` folder.
 
 ```yaml
 ## World is the world name which contains the region you would like to despawn mobs in.

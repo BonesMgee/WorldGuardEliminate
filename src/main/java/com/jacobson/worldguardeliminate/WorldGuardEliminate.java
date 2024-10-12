@@ -6,6 +6,7 @@ import com.sk89q.worldguard.protection.managers.RegionManager;
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
 import com.sk89q.worldguard.protection.regions.RegionContainer;
 import org.bukkit.Bukkit;
+import org.bukkit.entity.Monster;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityTargetEvent;
@@ -38,8 +39,10 @@ public final class WorldGuardEliminate extends JavaPlugin implements Listener {
 
     @EventHandler
     private void EntityTargetHandler(EntityTargetLivingEntityEvent event) {
-        if (region.contains(BukkitAdapter.asBlockVector(event.getEntity().getLocation()))) {
-            event.getEntity().remove();
+        if (event.getEntity() instanceof Monster) {
+            if (region.contains(BukkitAdapter.asBlockVector(event.getEntity().getLocation()))) {
+                event.getEntity().remove();
+            }
         }
     }
 }
